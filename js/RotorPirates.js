@@ -53,7 +53,7 @@ var bfcalc = function(rcCommand, rcRate, expo, superRate) {
 
     angleRate = 200.0 * rcRate * rcCommand;
     if(superRate != 0){
-        rcSuperFactor = 1.0 / (clamp(1.0 - absRcCommand * (superRate)), 0.01, 1.00))
+        rcSuperFactor = 1.0 / (clamp(1.0 - absRcCommand * (superRate)), 0.01, 1.00)
         angleRate *= rcSuperFactor
     }
 
