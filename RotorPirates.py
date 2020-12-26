@@ -93,31 +93,31 @@ ksmin = np.array(ksplot).min()
 ax.set_ylim([np.array([rfmin, bfmin, ksmin]).min(), np.array([rfmax, bfmax, ksmax]).max()])
 
 # Set up sliders
-rfrate_slider_ax = fig.add_axes([0.25, 0.45, 0.65, 0.03], facecolor=axis_color)
+rfrate_slider_ax = fig.add_axes([0.25, 0.45, 0.65, 0.03])
 rfrate_slider = Slider(rfrate_slider_ax, 'RFRate', 0, 1000, valinit=rfrate_default, valfmt='%1.0f')
 
-rfexpo_slider_ax = fig.add_axes([0.25, 0.4, 0.65, 0.03], facecolor=axis_color)
+rfexpo_slider_ax = fig.add_axes([0.25, 0.4, 0.65, 0.03])
 rfexpo_slider = Slider(rfexpo_slider_ax, 'RFExpo', 0, 100, valinit=rfexpo_default, valfmt='%1.0f')
 
-rfacrop_slider_ax = fig.add_axes([0.25, 0.35, 0.65, 0.03], facecolor=axis_color)
+rfacrop_slider_ax = fig.add_axes([0.25, 0.35, 0.65, 0.03])
 rfacrop_slider = Slider(rfacrop_slider_ax, 'RFAcro+', 0, 1000, valinit=rfacrop_default, valfmt='%1.0f')
 
-bfrate_slider_ax = fig.add_axes([0.25, 0.3, 0.65, 0.03], facecolor=axis_color)
+bfrate_slider_ax = fig.add_axes([0.25, 0.3, 0.65, 0.03])
 bfrate_slider = Slider(bfrate_slider_ax, 'BFRate', 0, 3.0, valinit=bfrate_default, valfmt='%1.2f')
 
-bfexpo_slider_ax = fig.add_axes([0.25, 0.25, 0.65, 0.03], facecolor=axis_color)
+bfexpo_slider_ax = fig.add_axes([0.25, 0.25, 0.65, 0.03])
 bfexpo_slider = Slider(bfexpo_slider_ax, 'BFExpo', 0, 1.0, valinit=bfexpo_default, valfmt='%1.2f')
 
-bfsuper_slider_ax = fig.add_axes([0.25, 0.2, 0.65, 0.03], facecolor=axis_color)
+bfsuper_slider_ax = fig.add_axes([0.25, 0.2, 0.65, 0.03])
 bfsuper_slider = Slider(bfsuper_slider_ax, 'BFSuper', 0, 1.0, valinit=bfsuper_default, valfmt='%1.2f')
 
-ksrate_slider_ax = fig.add_axes([0.25, 0.15, 0.65, 0.03], facecolor=axis_color)
+ksrate_slider_ax = fig.add_axes([0.25, 0.15, 0.65, 0.03])
 ksrate_slider = Slider(ksrate_slider_ax, 'KISS Rate', 0, 1.0, valinit=ksrate_default, valfmt='%1.2f')
 
-kscurve_slider_ax = fig.add_axes([0.25, 0.1, 0.65, 0.03], facecolor=axis_color)
+kscurve_slider_ax = fig.add_axes([0.25, 0.1, 0.65, 0.03])
 kscurve_slider = Slider(kscurve_slider_ax, 'KISS RC Curve', 0, 1.0, valinit=kscurve_default, valfmt='%1.2f')
 
-ksrcrate_slider_ax = fig.add_axes([0.25, 0.05, 0.65, 0.03], facecolor=axis_color)
+ksrcrate_slider_ax = fig.add_axes([0.25, 0.05, 0.65, 0.03])
 ksrcrate_slider = Slider(ksrcrate_slider_ax, 'KISS RC rate', 0, 10.0, valinit=ksrcrate_default, valfmt='%1.2f')
 
 
